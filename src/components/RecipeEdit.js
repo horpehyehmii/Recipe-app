@@ -6,7 +6,7 @@ import uuidv4 from 'uuid/v4'
 
 export default function RecipeEdit({recipe}) {
 
-const {handleRecipeEdit} = useContext(RecipeContext)
+const {handleRecipeEdit, handleRecipeSelect} = useContext(RecipeContext)
 
 function handleChanges(changes){
   handleRecipeEdit(recipe.id, {...recipe, ...changes})
@@ -38,7 +38,7 @@ function handleIngredientDelete(id){
   return (
     <div className="recipe-edit">
       <div className="recipe-edit__remove-button-container">
-        <button className="btn recipe-edit__remove-button">&times;</button>
+        <button onClick={()=>handleRecipeSelect(undefined)} className="btn recipe-edit__remove-button">&times;</button>
       </div>
       <div className="recipe-edit__details-grid">
         <label
