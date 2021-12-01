@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d5a0b189.chunk.css",
+    "main.js": "/static/js/main.8fb01770.chunk.js",
+    "main.js.map": "/static/js/main.8fb01770.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.3310f33a.chunk.js": "/static/js/2.3310f33a.chunk.js",
+    "static/js/2.3310f33a.chunk.js.map": "/static/js/2.3310f33a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b26ecd958bb986b61a3220fdf0ecd639.js": "/precache-manifest.b26ecd958bb986b61a3220fdf0ecd639.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d5a0b189.chunk.css.map": "/static/css/main.d5a0b189.chunk.css.map",
+    "static/media/app.css": "/static/media/GothamRounded-Light.f2d6aa9a.woff"
+  }
+}
