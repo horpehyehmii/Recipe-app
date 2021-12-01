@@ -7,10 +7,7 @@ export default function RecipeList({ recipes }) {
       <div>
         {recipes.map(recipe => {
           return (
-            <Recipe
-              key={recipe.id}
-              {...recipe}
-            />
+            <Recipe key={recipe.id} {...recipe}/>
           )
         })}
       </div>
