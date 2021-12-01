@@ -1,10 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import RecipeList from './RecipeList'
 import '../css/app.css'
 
 function App() {
+  const [recipes, setRecipes] = useState(sampleRecipes)
+
+  function handleRecipeAdd(){
+    const newRecipe = {
+      id: 3,
+      name: 'Plain Chicken',
+      servings: 3,
+      cookTime: '1:45',
+      instructions: "1. Put salt on chicken\n2. Put chicken in oven\n3. Eat chicken",
+      ingredients: [
+        {
+          id: 1,
+          name: 'Chicken',
+          amount: '2 Pounds'
+        },
+        {
+          id: 2,
+          name: 'Salt',
+          amount: '1 Tbs'
+        }
+      ]
+    }
+    setRecipes([...recipes, newRecipe])
+  }
   return (
-    <RecipeList recipes={sampleRecipes} />
+    <RecipeList recipes={recipes} handleRecipeAdd={handleRecipeAdd}/>
   )
 }
 
