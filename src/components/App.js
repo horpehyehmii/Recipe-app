@@ -8,14 +8,14 @@ function App() {
   function handleRecipeAdd(){
     const newRecipe = {
       id: 3,
-      name: 'Plain Chicken',
+      name: 'Plain ____',
       servings: 3,
-      cookTime: '1:45',
-      instructions: "1. Put salt on chicken\n2. Put chicken in oven\n3. Eat chicken",
+      cookTime: '5:00',
+      instructions: "1. Put salt on ____\n2. Put ____ in oven\n3. Eat ____",
       ingredients: [
         {
           id: 1,
-          name: 'Chicken',
+          name: '____',
           amount: '2 Pounds'
         },
         {
