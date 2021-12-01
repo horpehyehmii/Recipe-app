@@ -24,7 +24,8 @@ function App() {
   const recipeContextValue = {
     handleRecipeAdd,
     handleRecipeDelete,
-    handleRecipeSelect
+    handleRecipeSelect,
+    handleRecipeEdit
   }
 
   function handleRecipeAdd() {
@@ -38,7 +39,7 @@ function App() {
         { id: uuidv4(), name: 'Name', amount: '1 Tbs' }
       ]
     }
-
+    setSelectedRecipeId(newRecipe.id)
     setRecipes([...recipes, newRecipe])
   }
 
@@ -48,6 +49,13 @@ function App() {
 
   function handleRecipeSelect(id){
     setSelectedRecipeId(id)
+  }
+
+  function handleRecipeEdit(id, editedRecipe){
+    const newRecipes = [...recipes]
+    const index = newRecipes.findIndex(r=> r.id === id)
+    newRecipes[index] = editedRecipe
+    setRecipes(newRecipes)
   }
 
   return (
